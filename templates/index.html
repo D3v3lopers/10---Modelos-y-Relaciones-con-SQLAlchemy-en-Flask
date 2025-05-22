@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Productos</title>
+</head>
+<body>
+    <a href="#"> Agregar nuevo producto</a>
+    <table border="1">
+        <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Acción</th>
+                </tr>
+        </thead>
+        <tboby>
+            {%  for p in productos  %}
+                    <tr>
+                    <td>{{p.nombre_producto}}</td>
+                    <td>{{p.precio_producto}}</td>
+                     <td> [Editar] [Eliminar]</td>
+                    </tr>
+            {% endfor %}
+        </tboby>
+
+    </table>
+
+</body>
+</html>
